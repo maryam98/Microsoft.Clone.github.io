@@ -266,42 +266,61 @@ group .btn {
 .header{
   display: flex;
 }
-.c-search button::after {
-  font-family: "MWF-MDL2";
-  content: "";
-  -ms-high-contrast-adjust: none;
-  border: none;
-  display: inline-block;
-  font-size: 16px;
-  margin-left: 2px;
-  position: relative;
-  text-indent: 0;
-  vertical-align: sub;
+
+.navbar {
+  overflow: hidden;
+  background-color: inherit;
 }
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
 .subnav {
   float: left;
   overflow: hidden;
 }
+
 .subnav .subnavbtn {
   font-size: 16px;
   border: none;
   outline: none;
-  color: hsl(0, 0%, 4%);
+  color: white;
   padding: 14px 16px;
-  background-color: inherit;
+  background-color:#c1bbbb;
   font-family: inherit;
   margin: 0;
 }
+
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color:#e6e6e6;
+}
+
 .subnav-content {
   display: none;
   position: absolute;
   left: 0;
-  background-color: red;
+  background-color: #c1bbbb;
   width: 100%;
-  z-index: 1;
+
 }
+
 .subnav-content a {
   float: left;
-  color: black;
+  color: rgb(11, 10, 10);
   text-decoration: none;
+}
+
+.subnav-content a:hover {
+  background-color: rgb(18, 16, 16);
+  color: black;
+}
+
+.subnav:hover .subnav-content {
+  display: block;
 }
