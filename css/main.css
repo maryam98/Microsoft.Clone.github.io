@@ -145,9 +145,9 @@ html:not([dir=rtl]) .card-img-overlay>.card-foreground {
 @media (min-width: 1084px){
 .container {
     padding-right: 5%;
-    padding-left: 5%;
+    padding-left: 10%;
     width: 90%;
-    box-sizing: content-box;
+    box-sizing:content-box;
 }
 }
 @media (min-width: 1084px){
@@ -172,7 +172,15 @@ html:not([dir=rtl]) .card-img-overlay>.card-foreground {
 .w-lg-col-5 {
     width: 41.66667%!important;
 }}
-/******* khatari *******/
+@media (min-width: 1084px){
+.card-img-overlay>.card-background {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+
+    width: 100%;
+}}
 
 .card {
   position: relative;
@@ -254,4 +262,46 @@ group .btn {
 .btn-brand, .btn-primary, .theme-dark .btn-brand, .theme-dark .btn-primary-alt {
   background-color: #0067b8;
   color: #fff!important;
+}
+.header{
+  display: flex;
+}
+.c-search button::after {
+  font-family: "MWF-MDL2";
+  content: "";
+  -ms-high-contrast-adjust: none;
+  border: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-left: 2px;
+  position: relative;
+  text-indent: 0;
+  vertical-align: sub;
+}
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+.subnav .subnavbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: hsl(0, 0%, 4%);
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: red;
+  width: 100%;
+  z-index: 1;
+}
+.subnav-content a {
+  float: left;
+  color: black;
+  text-decoration: none;
 }
