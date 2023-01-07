@@ -38,19 +38,23 @@ html {
 }
 
 /*
- * A better looking default horizontal rule
+ * ****************************A better looking default horizontal rule
  */
 
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
-  padding: 0;
+ .topnav {
+  background-color: #fff;
+  overflow: hidden;
 }
-
-/*
+.topnav a {
+  border: 1px solid transparent;
+  color: #262626;
+  display: inline-block;
+  margin-top: 1px;
+  padding: 16px 8px 10px;
+  height: 48px;
+  outline-offset: -2px;
+}
+/*****************************************************
  * Remove the gap between audio, canvas, iframes,
  * images, videos and the bottom of their containers:
  * https://github.com/h5bp/html5-boilerplate/issues/440
