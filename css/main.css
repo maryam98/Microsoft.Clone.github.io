@@ -1,13 +1,259 @@
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+}
+html:not([dir=rtl]) body {
+  text-align: left;
+}
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Segoe UI",SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #000;
+  background-color: #fff;
+}
+div {
+  display: block;
+}
+.btn {
+  display: inline-block;
+  font-weight: 600;
+  eight: 600;
+
+  position: relative;
+  border-radius: 0.125rem;
+  background-color: inherit;
+  color: inherit;
+  text-decoration: none;
+  padding: 0.625rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1;
+  cursor: pointer;
+}
 .topnav {
   background-color:#fff;
   overflow: hidden;
+  padding: 0 5%;
 }
 .topnav a {
   border: 1px solid transparent;
+  font-size: 15px;
+  font-family: sans-serif;
+
   color: #262626;
   display: inline-block;
   margin-top: 1px;
   padding: 16px 8px 10px;
   height: 48px;
   outline-offset: -2px;
+  text-decoration: none;
+}
+.topnav a:hover {
+
+  text-decoration: underline;
+}
+@media screen and (min-width: 860px){
+  .c-logo{
+    padding: 16px 6px 16px 10px;
+    float: left;
+    height: 100%;
+    margin-top: 1px;
+    width: 137px;
+    outline-offset: -2px;
+  }
+}
+@media screen and (min-width: 860px){
+  .topnav{
+    font-size: 13px !important;
+    height: 54px;
+    margin-bottom: 2px;
+
+
+  }
+}
+form {
+  display: block;
+  margin-top: 0em;
+}
+@media only screen and (max-width: 859px){
+  .topnav{
+    border-bottom: 1px solid #e6e6e6;
+    height: 54px;
+}
+}
+.c-image {
+  margin-top: -3px;
+  max-width: none;
+  width: 108px;
+}
+.c-search {
+  position: relative;
+    min-width: 92px;
+    max-width: 296px;
+    height: 38px;
+    margin-top: 20px;
+}
+@media only screen and (min-width: 860px){
+  .c-search {
+    margin-top: 3px;
+    max-width: 100% !important;
+    min-width: 90px;
+    width: auto;
+}
+}
+.c-search button {
+  height: 32px;
+  background: transparent;
+  margin-right: 6px;
+}
+@media (min-width: 1084px){
+.card-img-overlay {
+    display: flex;
+}
+}
+@media (min-width: 1084px){
+html:not([dir=rtl]) .card-img-overlay>.card-foreground {
+    margin-left: -100%!important;
+    margin-right: 0;
+}
+}
+@media (min-width: 1084px){
+.card-img-overlay>.card-foreground {
+    width: 100%;
+    align-self: center;
+}}
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
+}
+@media (min-width: 1400px){
+.container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 1600px;
+}}
+
+@media (min-width: 1400px){
+.container {
+    max-width: 1600px;
+}
+}
+@media (min-width: 1084px){
+.container {
+    padding-right: 5%;
+    padding-left: 5%;
+    width: 90%;
+    box-sizing: content-box;
+}
+}
+@media (min-width: 1084px){
+.mb-lg-5, .my-lg-5 {
+    margin-bottom: 3rem!important;
+}}
+@media (min-width: 1084px){
+.mt-lg-5, .my-lg-5 {
+    margin-top: 3rem!important;
+}}
+@media (min-width: 860px){
+.mt-md-n5, .my-md-n5 {
+    margin-top: -3rem!important;
+}}
+.justify-content-end {
+  justify-content: flex-end!important;
+}
+.d-flex {
+  display: flex!important;
+}
+@media (min-width: 1084px){
+.w-lg-col-5 {
+    width: 41.66667%!important;
+}}
+/******* khatari *******/
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  min-width: 1px;
+  word-wrap: break-word;
+  background-clip: border-box;
+}
+    @media (min-width: 860px){
+    .pb-md-5, .py-md-5 {
+        padding-bottom: 3rem!important;
+    }}
+    @media (min-width: 1084px){
+    .depth-lg-none {
+        box-shadow: none!important;
+    }}
+    @media (min-width: 1084px){
+    .bg-lg-transparent-text-dark {
+        color: #000!important;
+    }}
+    @media (min-width: 1084px){
+    .bg-lg-transparent, .bg-lg-transparent-text-dark, .bg-lg-transparent-text-light {
+        background-color: transparent!important;
+    }}
+    @media (min-width: 860px){
+    .material-md-card {
+        background-color: #fff;
+        color: #000;
+        box-shadow: 0 0.0625rem 0.125rem rgb(0 0 0 / 11%), 0 0.1875rem 0.4375rem rgb(0 0 0 / 13%);
+    }}
+    .card-body {
+      flex: 1 1 auto;
+      position: relative;
+  }
+  .mb-2, .my-2 {
+    margin-bottom: 0.5rem!important;
+}
+.badge {
+  display: inline-block;
+  padding: 0.375em 0.75em;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1;
+  text-decoration: none;
+  vertical-align: top;
+  max-width: 100%;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+@media (min-width: 1400px){
+.h2, h2 {
+    font-size: 2.3125rem;
+    margin-bottom: 1.25rem;
+}}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  font-family: inherit;
+  font-weight: 600;
+  line-height: 1.2;
+}
+.mb-4, .my-4 {
+  margin-bottom: 1.5rem!important;
+}
+.link-group {
+  min-height: 2.5rem;
+  margin-top: -0.5rem;
+  margin-bottom: -0.5rem;
+}
+group .btn {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.link-group a {
+  display: inline-block;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.btn-brand, .btn-primary, .theme-dark .btn-brand, .theme-dark .btn-primary-alt {
+  background-color: #0067b8;
+  color: #fff!important;
 }
